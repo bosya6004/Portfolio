@@ -1784,14 +1784,14 @@ input, select, textarea {
 		line-height: 1.5em;
 	}
 
-	header.major h2 {
+	header.major h1 {
 		color: #4acaa8;
 		font-size: 3.5em;
 	}
 
-		header.major h2 + p {
+		header.major h1 + p {
 			color: #777;
-			font-size: 1.75em;
+			font-size: 1.5em;
 			font-weight: 700;
 			margin-top: -0.75em;
 		}
@@ -2193,9 +2193,10 @@ input, select, textarea {
 		}
 
 			.image.avatar img {
-				border-radius: 100%;
-				display: block;
-				width: 100%;
+				width: 100px; /* Set to desired size */
+				height: 100px; /* Ensure this is equal to width */
+				border-radius: 50%; /* Makes the image a circle */
+				object-fit: cover; 
 			}
 
 		.image.main {
@@ -2672,7 +2673,9 @@ input, select, textarea {
 
 			.features article .image img {
 				display: block;
-				width: 100%;
+				width: 100%; /* This ensures the images fill the container width */
+				height: 200px; /* Set a fixed height for all images */
+				object-fit: cover;
 			}
 
 		.features article .inner {
@@ -3152,11 +3155,11 @@ input, select, textarea {
 				display: none;
 			}
 
-			header.major h2 {
+			header.major h1 {
 				font-size: 2.5em;
 			}
 
-				header.major h2 + p {
+				header.major h1 + p {
 					font-size: 1.5em;
 				}
 
