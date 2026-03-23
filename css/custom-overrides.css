@@ -1,0 +1,27 @@
+/* Hero image crop fixes */
+.section-inner.start-page-full-width .inner-content .fill-block {
+  background-position: center 18%;
+  min-height: 420px;
+}
+
+@media only screen and (min-width: 992px) {
+  .section-inner.start-page-full-width .row,
+  .section-inner.start-page-full-width .inner-content,
+  .section-inner.start-page-full-width .inner-content .fill-block {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-inner.start-page-full-width .inner-content .fill-block {
+    min-height: 420px;
+    background-position: center 12%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-inner.start-page-full-width .inner-content .fill-block {
+    min-height: 360px;
+    background-position: center 10%;
+  }
+}
